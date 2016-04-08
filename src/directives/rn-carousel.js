@@ -65,7 +65,7 @@
                 },
                 opacity,
                 absoluteLeft = (slideIndex * 100) + offset,
-                slideTransformValue = DeviceCapabilities.has3d ? 'translate3d(' + absoluteLeft + '%, 0, 0)' : 'translate3d(' + absoluteLeft + '%, 0)',
+                slideTransformValue = DeviceCapabilities.has3d ? 'translate3d(' + absoluteLeft + '%, 0, 0)' : 'translate(' + absoluteLeft + '%, 0)',
                 distance = ((100 - Math.abs(absoluteLeft)) / 100);
 
             if (!DeviceCapabilities.transformProperty) {
